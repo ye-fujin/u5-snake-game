@@ -16,11 +16,12 @@ enum class EGameSpeed : uint8
 };
 
 UENUM()
-enum class EGridSize : uint8
+enum class EGridSize : uint16
 {
     Size_30x10 = 0,
     Size_50x15,
-    Size_80x20
+    Size_80x20,
+    Size_120x25
 };
 
 UCLASS()
@@ -69,7 +70,8 @@ private:
         {
             {EGridSize::Size_30x10, {"30x10", SnakeGame::Dim{30, 10}}},  //
             {EGridSize::Size_50x15, {"50x15", SnakeGame::Dim{50, 15}}},  //
-            {EGridSize::Size_80x20, {"80x20", SnakeGame::Dim{80, 20}}},  //
+            {EGridSize::Size_80x20, {"80x20", SnakeGame::Dim{80, 20}}},
+            {EGridSize::Size_120x25, {"120x25", SnakeGame::Dim{120, 25}}},  //
         };
 
     FSpeedData CurrentSpeed{GameSpeeds[EGameSpeed::Snake]};
