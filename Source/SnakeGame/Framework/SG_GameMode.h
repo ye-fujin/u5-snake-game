@@ -27,6 +27,9 @@ public:
     virtual void StartPlay() override;
     virtual void Tick(float DeltaSeconds) override;
 
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Test")
+    FString MyVariable;
+
 protected:
     UPROPERTY(EditDefaultsOnly, Category = "Settings")
     bool bOverrideUserSettings{false};

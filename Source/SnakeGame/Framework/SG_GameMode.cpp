@@ -23,6 +23,7 @@ DEFINE_LOG_CATEGORY_STATIC(LogSnakeGameMode, All, All);
 ASG_GameMode::ASG_GameMode()
 {
     PrimaryActorTick.bCanEverTick = true;
+    MyVariable = FString(TEXT("This is my test FString."));
 }
 
 void ASG_GameMode::StartPlay()
