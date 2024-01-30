@@ -75,7 +75,7 @@ private:
         };
 
     FSpeedData CurrentSpeed{GameSpeeds[EGameSpeed::Snake]};
-    FGridData CurrentGridSize{GridSizes[EGridSize::Size_50x15]};
+    FGridData CurrentGridSize{GridSizes[EGridSize::Size_120x25]};
 
     template <typename MapType, typename EnumType>
     EnumType FindOptionByNameOrDefault(const MapType& Map, const FString& Name, EnumType Default) const
